@@ -1,0 +1,10 @@
+version: "3"
+services:
+    pgfront:
+        image: pg-front
+        ports: "5000:5000"
+    pgback:
+        image: pg-back
+        ports: "3000:3000"
+        volumes:
+            - /opt/pirategame:/pirategame
