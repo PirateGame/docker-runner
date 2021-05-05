@@ -9,7 +9,7 @@ services:
     pgback:
         image: pg-back
         ports:
-            - "3000:3000"
+            - "5000:5000"
         volumes:
             - /opt/pgdata:/pgdata
             
