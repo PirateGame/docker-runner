@@ -1,13 +1,13 @@
 version: "3"
 services:
     pgfront:
-        image: pg-front
+        image: alex40144/pgfront
         ports:
             - "8080:8080"
         volumes:
             - /opt/pirategame:/pirategame
     pgback:
-        image: pg-back
+        image: alex40144/pgback
         ports:
             - "5000:5000"
         volumes:
