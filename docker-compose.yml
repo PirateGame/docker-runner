@@ -6,12 +6,12 @@ services:
         ports:
             - "8080:8080"
         volumes:
-            - /opt/pirategame:/pirategame
+            - /data/pirategame:/pirategame
     pgback:
         image: alex40144/pgback
         restart: always
         ports:
             - "5000:5000"
         volumes:
-            - /opt/pgdata:/pgdata
+            - /data/pgdata:/pgdata
             
